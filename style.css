@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    font-family: system-ui;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+input:focus {
+    outline: none;
+}
+
+.container {
+    width: 30%;
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.title {
+    color: #5700b4;
+}
+
+.show-password {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-show-password {
+    width: 89%;
+    font-size: 14px;
+    border: none;
+}
+
+.add-cursor {
+    cursor: pointer;
+}
+
+.icon-hidden-password {
+    display: none;
+}
+
+.chooss-password {
+    margin-top: 25px;
+    background-color: #f5f5f5;
+    border-radius: 7px;
+    padding: 10px 15px;
+}
+
+.password-length {
+    border-bottom: 1px solid #d7d7d7;
+    padding-bottom: 10px;
+}
+
+.show-lenght-password {
+    font-size: 15px;
+}
+
+.range-password {
+    margin: 10px 0 0 !important;
+    width: 100%;
+}
+
+.min-max-password-length {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.type-password {
+    margin-top: 15px;
+}
+
+.symbols-box,
+.digits-box,
+.uppercase-box,
+.lowercase-box {
+    margin: 12px 0;
+}
+
+.symbols,
+.digits,
+.uppercase,
+.lowercase {
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.symbols-checkbox,
+.digits-checkbox,
+.uppercase-checkbox,
+.lowercase-checkbox {
+    margin: 0;
+}
+
+.information-type-password {
+    font-size: 12px;
+    color: black;
+    margin-left: 3px;
+}
+
+.copy-and-create-button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.create-password,
+.copy-password {
+    border: none;
+    width: 48%;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.create-password {
+    background-color: #5700b4;
+    color: white;
+    cursor: pointer;
+}
+
+.copy-password {
+    background-color: #e2e2e2;
+}
+
+.copy-password:disabled {
+    cursor: default;
+    color: #898989;
+}
+
+.toast-element {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    background-color: #ff9898;
+    padding: 10px 15px;
+    border-radius: 5px;
+    visibility: hidden;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 425px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .container {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 40%;
+    }
+}
